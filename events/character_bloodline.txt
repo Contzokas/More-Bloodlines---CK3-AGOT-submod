@@ -1,0 +1,22 @@
+﻿
+namespace = historical_character_bloodline_initialize
+
+
+historical_character_bloodline_initialize.1 ={
+	hidden = yes
+
+	immediate = {
+		character:targaryen_82 = { character_bloodline_effect_the_blessed = yes }
+	}
+}
+
+
+historical_character_bloodline_initialize.2 ={
+	hidden = yes
+
+	immediate = {
+	}
+}
+
+
+

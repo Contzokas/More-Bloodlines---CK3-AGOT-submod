@@ -1,0 +1,17 @@
+﻿macro = {
+	description = "is Trait a bloodline?"
+	definition = "TraitIsBloodline"
+	replace_with = "EqualTo_string( Trait.GetDescription( GetNullCharacter ), '血脉' )"
+}
+
+macro = {
+	description = "trait count, exclude hidden ones"
+	definition = "RUI_Ch_trait_count"
+	replace_with = "FixedPointToInt(GuiScope.SetRoot( Character.MakeScope ).ScriptValue('non_hidden_trait_counter'))"
+}
+
+macro = {
+	description = "is Trait a bloodline?"
+	definition = "RUI_Ch_HIBL_macro_01"
+	replace_with = "TraitIsBloodline"
+}

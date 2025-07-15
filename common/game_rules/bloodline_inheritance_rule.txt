@@ -1,0 +1,18 @@
+﻿bloodline_inheritance = {
+	
+	categories = {
+		historicity
+	}
+	
+	default = all_descendants
+
+	all_descendants = {
+	}
+	
+	ck2_version = {
+
+	}
+	
+	ck2_realfather_version = {
+	}
+}

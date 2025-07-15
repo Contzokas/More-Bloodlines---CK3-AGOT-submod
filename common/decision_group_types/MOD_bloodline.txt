@@ -1,0 +1,4 @@
+﻿bloodline = {
+	sort_order = 3
+	gui_tags = { big_button }
+}

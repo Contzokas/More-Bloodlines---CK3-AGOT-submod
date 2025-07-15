@@ -1,0 +1,2421 @@
+on_game_start = {
+    on_actions = {
+        add_bloodlines
+    }
+}
+
+add_bloodlines = {
+    effect = {
+		if = {
+			limit = {
+				game_start_date >= 1000.1.1
+			}
+			dynasty:dynn_Velaryon = {
+				every_dynasty_member = {
+					add_trait = lord_of_tides
+				}
+			}
+			dynasty:dynn_Celtigar = {
+				every_dynasty_member = {
+					add_trait = celtigar
+				}
+			}
+			dynasty:dynn_Varezys = {
+				every_dynasty_member = {
+					add_trait = varezys
+				}
+			}
+			dynasty:dynn_Stark = {
+				every_dynasty_member = {
+					add_trait = bran_the_builder
+					add_trait = bran_the_breaker
+					add_trait = hungry_wolf
+				}
+			}
+			house:house_Cassel = {
+				every_house_member = {
+					add_trait = bloodline_cassel
+				}
+			}
+			house:house_Karstark = {
+				every_house_member = {
+					add_trait = karlon_stark
+				}
+			}
+				
+			dynasty:dynn_Stark = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8239.1.1
+						or = {
+							mother = character:Stark_127
+							this = character:Stark_127
+							mother = character:Stark_5
+						}
+                    }
+					add_trait = lyarra_stark
+				}
+			}
+			dynasty:dynn_Stark = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8266.10.1
+						or = {
+							this = character:Stark_5
+							mother = character:Stark_5
+						}
+                    }
+					add_trait = lyanna_stark
+				}
+			}
+			character:Stark_6 = {
+				limit = {
+						game_start_date >= 8283.9.13
+                    }
+				add_trait = young_wolf
+			}
+			character:Stark_8  = {
+				limit = {
+						game_start_date >= 8286.12.5
+                    }
+				add_trait = sansa
+			}
+			character:Stark_Dummy_8  = {
+				limit = {
+						game_start_date >= 8286.12.5
+                    }
+				add_trait = sansa
+			}
+			character:Stark_9 = {
+				limit = {
+						game_start_date >= 8289.3.16
+                    }
+				add_trait = arya
+			}
+			character:Stark_Dummy_9 = {
+				limit = {
+						game_start_date >= 8289.3.16
+                    }
+				add_trait = arya
+			}
+			character:Stark_10 = {
+				limit = {
+						game_start_date >= 8290.7.7
+                    }
+				add_trait = winged_wolf
+			}
+			character:Stark_Dummy_10 = {
+				limit = {
+						game_start_date >= 8290.7.7
+                    }
+				add_trait = winged_wolf
+			}
+			character:Stark_11 = {
+				limit = {
+						game_start_date >= 8295.1.1
+                    }
+				add_trait = rickon
+			}
+			character:Stark_Dummy_11 = {
+				limit = {
+						game_start_date >= 8295.1.1
+                    }
+				add_trait = rickon
+			}
+			dynasty:dynn_Bolton = {
+				every_dynasty_member = {
+					add_trait = royce_redarm
+					add_trait = belthasar_bolton
+				}
+			}
+			dynasty:dynn_Bolton = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8255.1.1
+						or = {
+							father = character:Bolton_1
+							this = character:Bolton_1
+						}
+					}
+					add_trait = leech_lord
+				}
+			}
+			dynasty:dynn_Durrandon = {
+				every_dynasty_member = {
+					add_trait = durran_godsgrief
+					add_trait = arlan_avenger
+					add_trait = argilac_arrogant
+				}
+			}
+			dynasty:dynn_Baratheon = {
+				every_dynasty_member = {
+					add_trait = durran_godsgrief
+					add_trait = arlan_avenger
+					add_trait = argilac_arrogant
+					if = {
+						limit = {
+							game_start_date >= 7999.4.1
+						}
+						add_trait = orys_baratheon
+					}
+					if = {
+						limit = {
+							game_start_date >= 8191.1.1
+							or = {
+								father = character:Baratheon_71
+								this = character:Baratheon_71
+							}
+						}
+						add_trait = laughing_storm
+					}
+					if = {
+						limit = {
+							game_start_date >= 8250.1.1
+						}
+						add_trait = laughing_storm
+					}
+					if = {
+						limit = {
+							game_start_date >= 8262.10.1
+							or = {
+								father = character:Baratheon_2
+								this = character:Baratheon_2
+							}
+						}
+						add_trait = robert_baratheon
+					}
+					if = {
+						limit = {
+							game_start_date >= 8277.1.1
+							or = {
+								father = character:Baratheon_4
+								this = character:Baratheon_4
+							}
+						}
+						add_trait = renly_baratheon
+					}
+				}
+			}
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					add_trait = lann_the_clever
+					add_trait = gerold_the_great
+				}
+			}
+			house:house_LannisterLannisport = {
+				every_house_member = {
+					add_trait = lannisport
+				}
+			}
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8242.1.1
+						or = {
+							father = character:Lannister_1
+							this = character:Lannister_1
+						}
+					}
+					add_trait = tywin
+				}
+			}
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8266.1.1
+						or = {
+							mother = character:Lannister_6
+							this = character:Lannister_6
+						}
+					}
+					add_trait = cersei_lannister
+				}
+			}
+			dynasty:dynn_Baratheon = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8266.1.1
+						mother = character:Lannister_6
+					}
+					add_trait = cersei_lannister
+				}
+			}
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8266.1.1
+						or = {
+							mother = character:Lannister_7
+							this = character:Lannister_7
+						}
+					}
+					add_trait = kingslayer
+				}
+			}
+			dynasty:dynn_Lannister = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8266.1.1
+						or = {
+							mother = character:Lannister_8
+							this = character:Lannister_8
+						}
+					}
+					add_trait = tyrion
+				}
+			}
+
+			if = {
+			limit = {
+				game_start_date >= 8299.1.16
+				or = {}
+				title:e_the_iron_throne.holder = character:Baratheon_5
+				title:e_the_iron_throne.holder = character:Baratheon_6
+				title:e_the_iron_throne.holder = character:Baratheon_7
+			}
+				character:Baratheon_5 = {
+					add_trait = lannister_bastards
+				}
+				character:Baratheon_6 = {
+					add_trait = lannister_bastards
+				}
+				character:Baratheon_7 = {
+					add_trait = lannister_bastards
+				}
+			}
+
+			dynasty:dynn_Grey_King = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = ironfoot
+					add_trait = redhand_bloodline
+				}
+			}
+
+			dynasty:dynn_Hoare = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = qhored_cruel
+					add_trait = stumphand_bloodline
+					if = {
+						limit = {
+							game_start_date >= 7879.1.1
+						}
+						add_trait = harwyn_hardhand
+					}
+					if = {
+						limit = {
+							game_start_date >= 7940.1.1
+						}
+						add_trait = black_harren_bl
+					}
+				}
+			}
+
+			dynasty:dynn_Greyjoy = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = greyjoy
+					add_trait = old_kraken_bloodline
+					add_trait = coldwind_bloodline
+					if = {
+						limit = {
+							game_start_date >= 8113.1.1
+						}
+						add_trait = red_kraken
+					}
+					if = {
+						limit = {
+							game_start_date >= 8257.1.1
+						}
+						add_trait = twice_crowned_bloodline
+					}
+				}
+			}
+
+			character:Greyjoy_6 = {
+				limit = {
+					game_start_date >= 8258.1.1
+				}
+				add_trait = bloodline_euron
+				if = {
+					limit = {
+						game_start_date >= 8299.11.15
+					}
+					add_trait = bloodline_euron_king
+					remove_trait = bloodline_euron
+				}
+			}
+
+			character:Greyjoy_14 = {
+				limit = {
+					game_start_date >= 8279.1.1
+				}
+				add_trait = bloodline_theon_balon
+				if = {
+					limit = {
+						game_start_date >= 8289.6.1
+					}
+					add_trait = bloodline_theon_robb
+					remove_trait = bloodline_theon_balon
+				}
+				if = {
+					limit = {
+						game_start_date >= 8299.1.16
+					}
+					add_trait = bloodline_theon_robb_king
+					remove_trait = bloodline_theon_balon
+					remove_trait = bloodline_theon_robb
+				}
+				if = {
+					limit = {
+						game_start_date >= 8299.3.25
+					}
+					remove_trait = bloodline_theon_robb_king
+					add_trait = bloodline_theon_balon
+					remove_trait = bloodline_theon_robb
+				}
+			}
+			character:Greyjoy_13 = {
+				limit = {
+					game_start_date >= 8276.1.1
+				}
+				add_trait = bloodline_asha_greyjoy
+				
+			}
+
+			dynasty:dynn_Harlaw = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = harlaw_bloodline
+					add_trait = harron_bloodline
+					if = {
+						limit = {
+							game_start_date >= 8255.1.1
+							or = {
+								father = character:Harlaw_9
+								this = character:Harlaw_9
+							}
+						}
+						add_trait = reader_harlaw_bloodline
+					}
+					if = {
+						limit = {
+							game_start_date >= 8266.1.1
+							or = {
+								father = character:Harlaw_12
+								this = character:Harlaw_12
+							}
+						}
+						add_trait = knight_harlaw_bloodline
+					}
+				}
+			}
+
+			dynasty:dynn_Drumm = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = drumm_bloodline
+					add_trait = necromancer_drumm_bloodline
+					add_trait = ravenfeeder_bloodline
+				}
+			}
+
+
+			dynasty:dynn_Botley = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = botley_bloodline
+				}
+			}
+
+			dynasty:dynn_Botley = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = botley_bloodline
+				}
+			}
+
+			dynasty:dynn_Blacktyde = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = blacktyde_bloodline
+					add_trait = maidensbane_bloodline
+				}
+			}
+
+			dynasty:dynn_Volmark = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = volmark_bloodline
+				}
+			}
+
+			dynasty:dynn_Merlyn = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = merlyn_bloodline
+				}
+			}
+
+			dynasty:dynn_Orkwood = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = orkwood_bloodline
+				}
+			}
+
+			dynasty:dynn_Saltcliffe = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = saltcliffe_bloodline
+				}
+			}
+			
+			dynasty:dynn_Farwynd = {
+				every_dynasty_member = {
+					add_trait = grey_king
+					add_trait = farwynd_bloodline
+				}
+			}
+
+
+			dynasty:dynn_Gardener = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = garth_the_gardener
+					add_trait = garth_goldenhand
+					add_trait = sage_kings_bl
+					add_trait = oakenseat
+				}
+			}
+			
+			dynasty:dynn_Tyrell = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = alester_tyrell
+					if = {
+						limit = {
+							game_start_date >= 8158.1.1
+						}
+						add_trait = leo_longthorn
+					}
+					if = {
+						limit = {
+							game_start_date >= 8228.1.1
+							or = {
+								mother = character:redwyne_2
+								this = character:redwyne_2
+							}
+						}
+						add_trait = olenna_redwyne
+					}
+					if = {
+						limit = {
+							game_start_date >= 8299.1.5
+							or = {
+								this = character:Tyrell_14
+							}
+						}
+						add_trait = bloodline_margaery
+					}
+				}
+			}
+
+			dynasty:dynn_Hightower = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = uthor_the_hightower
+					add_trait = urrigon_hightower
+
+					if = {
+						limit = {
+							game_start_date >= 8088.1.1
+							this = character:Hightower_97
+						}
+						add_trait = alicent_hightower
+					}
+
+					if = {
+						limit = {
+							game_start_date >= 8113.1.1
+							this = character:Tarly_28
+							mother = character:Tarly_28
+						}
+						add_trait = bloodline_lady_sam
+					}
+
+					if = {
+						limit = {
+							game_start_date >= 8225.1.1
+							this = character:Hightower_3
+						}
+						add_trait = white_bull_bloodline
+					}
+					
+				}
+			}
+
+			dynasty:dynn_Oakheart = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = john_the_oak
+				}
+			}
+
+			dynasty:dynn_Florent = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = bloodline_house_florent
+					add_trait = florys_the_fox
+				}
+			}
+
+			dynasty:dynn_Ball = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = bloodline_house_ball
+					add_trait = florys_the_fox
+
+					if = {
+						limit = {
+							game_start_date >= 8150.1.1
+							or = {
+								father = character:Ball_23
+								this = character:Ball_23
+							}
+						}
+						add_trait = bloodline_fireball
+					}
+				}
+			}
+
+			dynasty:dynn_Peake = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = bloodline_house_Peake
+					add_trait = florys_the_fox
+				}
+			}
+
+			dynasty:dynn_Fossoway = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = foss_the_archer
+					if = {
+						limit = {
+							game_start_date >= 8228.1.1
+							or = {
+								mother = character:redwyne_2
+								mother = character:Tyrell_9
+								mother = character:Tyrell_10
+								this = character:redwyne_2
+							}
+						}
+						add_trait = olenna_redwyne
+					}
+				}
+			}
+
+			house:house_Fossoway_New_Barrel = {
+				every_house_member = {
+					add_trait = bloodline_fossoway_green
+				}
+			}
+
+			dynasty:dynn_Bulwer = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = bors_the_breaker
+				}
+			}
+
+			dynasty:dynn_Crane = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = rose_of_red_lake
+				}
+			}
+
+			dynasty:dynn_Beesbury = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = elwyn_the_ever_sweet
+				}
+			}
+
+			dynasty:dynn_Rowan = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = rowan_gold_tree
+				}
+			}
+
+			dynasty:dynn_Redwyne = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = gilbert_of_the_vines
+					if = {
+						limit = {
+							game_start_date >= 8041.1.1
+							or = {
+								this = character:redwyne_32
+							}
+						}
+						add_trait = ryam_redwyne
+					}
+					if = {
+						limit = {
+							game_start_date >= 8228.1.1
+							or = {
+								mother = character:redwyne_2
+								mother = character:Tyrell_9
+								this = character:redwyne_2
+							}
+						}
+						add_trait = olenna_redwyne
+					}
+				}
+			}
+
+			dynasty:dynn_Hunt = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = harlon_the_hunter_and_hendon_of_the_horn
+				}
+			}
+
+			dynasty:dynn_Hewett = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = owen_oakenshield
+				}
+			}
+
+			dynasty:dynn_Tarly = {
+				every_dynasty_member = {
+					add_trait = greenhand
+					add_trait = harlon_the_hunter_and_hendon_of_the_horn
+					if = {
+						limit = {
+							game_start_date >= 8113.1.1
+							this = character:Tarly_28
+						}
+						add_trait = bloodline_lady_sam
+					}
+				}
+			}
+
+			dynasty:dynn_Webber = {
+				every_dynasty_member = {
+					add_trait = bloodline_webber
+					if = {
+						limit = {
+							game_start_date >= 8186.1.1
+						}
+						add_trait = webber_widow
+					}
+				}
+			}
+
+			dynasty:dynn_Osgrey = {
+				every_dynasty_member = {
+					add_trait = little_lion
+				}
+			}
+
+			dynasty:dynn_Leygood = {
+				every_dynasty_member = {
+					add_trait = bloodline_leygood
+				}
+			}
+
+			dynasty:dynn_Meadows = {
+				every_dynasty_member = {
+					add_trait = bloodline_meadows
+				}
+			}
+
+			dynasty:dynn_Chester = {
+				every_dynasty_member = {
+					add_trait = bloodline_chester
+				}
+			}
+
+			dynasty:dynn_Grimm = {
+				every_dynasty_member = {
+					add_trait = bloodline_grimm
+				}
+			}
+			
+			dynasty:dynn_Serry = {
+				every_dynasty_member = {
+					add_trait = bloodline_serry
+				}
+			}
+
+			dynasty:dynn_Merryweather = {
+				every_dynasty_member = {
+					add_trait = bloodline_merryweather
+				}
+			}
+
+			dynasty:dynn_Costayne = {
+				every_dynasty_member = {
+					add_trait = bloodline_costayne
+				}
+			}
+
+			dynasty:dynn_Vaith = {
+				every_dynasty_member = {
+					add_trait = bloodline_vaith
+				}
+			}
+
+			dynasty:dynn_Toland = {
+				every_dynasty_member = {
+					add_trait = bloodline_toland
+				}
+			}
+
+			dynasty:dynn_Jordayne = {
+				every_dynasty_member = {
+					add_trait = bloodline_jordayne
+				}
+			}
+
+			dynasty:dynn_Gargalen = {
+				every_dynasty_member = {
+					add_trait = bloodline_gargalen
+				}
+			}
+			dynasty:dynn_Ladybright = {
+				every_dynasty_member = {
+					add_trait = bloodline_ladybright
+				}
+			}
+
+			dynasty:dynn_Dalt = {
+				every_dynasty_member = {
+					add_trait = bloodline_dalt
+				}
+			}
+
+			dynasty:dynn_Santagar = {
+				every_dynasty_member = {
+					add_trait = bloodline_Santagar
+				}
+			}
+			dynasty:dynn_Allyrion = {
+				every_dynasty_member = {
+					add_trait = bloodline_allyrion
+				}
+			}
+
+			dynasty:dynn_Risley = {
+				every_dynasty_member = {
+					add_trait = bloodline_risley
+				}
+			}
+
+			dynasty:dynn_Rhysling = {
+				every_dynasty_member = {
+					add_trait = bloodline_rhysling
+				}
+			}
+
+			dynasty:dynn_Footly = {
+				every_dynasty_member = {
+					add_trait = bloodline_footly
+					if = {
+						limit = {
+							game_start_date >= 8113.1.1
+						}
+						add_trait = bloodline_sharis_footly
+					}
+				}
+			}
+
+			dynasty:dynn_Roxton = {
+				every_dynasty_member = {
+					add_trait = bloodline_roxton
+					if = {
+						limit = {
+							game_start_date >= 8024.1.1
+							this = character:Roxton_42
+						}
+						add_trait = lorence_roxton_bloodline
+					}
+					if = {
+						limit = {
+							game_start_date >= 8090.1.1
+						}
+						add_trait = bloodline_jon_roxton
+					}
+				}
+			}
+
+			dynasty:dynn_Staedmon = {
+				every_dynasty_member = {
+					add_trait = bloodline_staedmon
+				}
+			}
+
+			dynasty:dynn_Martell = {
+				every_dynasty_member = {
+					add_trait = nymeria
+					if = {
+						limit = {
+							game_start_date >= 8000.1.1
+						}
+						add_trait = meria
+					}
+					if = {
+						limit = {
+							game_start_date >= 8150.1.1
+							this = character:Martell_79
+						}
+						add_trait = myriah_martell
+					}
+					if = {
+						limit = {
+							game_start_date >= 8233.1.1
+							this = character:Martell_2
+						}
+						add_trait = lewyn_martell_bloodline
+					}
+
+					if = {
+						limit = {
+							game_start_date >= 8257.1.1
+							this = character:Martell_7
+						}
+						add_trait = elia_martell
+					}
+
+					if = {
+						limit = {
+							game_start_date >= 8258.1.1
+							this = character:Martell_8
+						}
+						add_trait = red_viper
+					}
+					if = {
+						limit = {
+							game_start_date >= 8258.1.1
+							father = character:Martell_8
+						}
+						add_trait = bloodline_sand_snake
+					}
+				}
+			}
+
+			dynasty:dynn_Dayne = {
+				every_dynasty_member = {
+					add_trait = sword_morning_mbs
+					add_trait = samwell_dayne
+					if = {
+						limit = {
+							game_start_date >= 8258.12.25
+							this = character:Dayne_5
+						}
+						add_trait = arthur_dayne_bloodline
+					}
+					if = {
+						limit = {
+							game_start_date >= 8262.1.1
+							this = character:Dayne_4
+						}
+						add_trait = bloodline_ashara_dayne
+					}
+				}
+			}
+			
+			
+			dynasty:dynn_Uller = {
+				every_dynasty_member = {
+					add_trait = uller
+				}
+			}
+
+			dynasty:dynn_Fowler = {
+				every_dynasty_member = {
+					add_trait = fowler
+				}
+			}
+
+			dynasty:dynn_Yronwood = {
+				every_dynasty_member = {
+					add_trait = yronwood
+				}
+			}
+
+			dynasty:dynn_Blackmont = {
+				every_dynasty_member = {
+					add_trait = blackmont
+				}
+			}
+
+			dynasty:dynn_Manwoody = {
+				every_dynasty_member = {
+					add_trait = manwoody
+				}
+			}
+			dynasty:dynn_Wyl = {
+				every_dynasty_member = {
+					add_trait = wyl
+				}
+			}
+			dynasty:dynn_Qorgyle = {
+				every_dynasty_member = {
+					add_trait = qorgyle
+				}
+			}
+
+			dynasty:dynn_Caron = {
+				every_dynasty_member = {
+					add_trait = lord_of_the_marches
+				}
+			}
+
+			dynasty:dynn_Swann = {
+				every_dynasty_member = {
+					add_trait = swann
+					if = {
+						limit = {
+							game_start_date >= 8090.1.1
+							this = character:Swann_24
+						}
+						add_trait = black_swann
+					}
+				}
+			}
+
+			dynasty:dynn_Tarth = {
+				every_dynasty_member = {
+					add_trait = galladon_of_morne
+					if = {
+						limit = {
+							game_start_date >= 8280.1.1
+							this = character:Tarth_6
+						}
+						add_trait = brienne_tarth
+					}
+				}
+			} 
+
+			dynasty:dynn_Dondarrion = {
+				every_dynasty_member = {
+					add_trait = lightning_lords
+					if = {
+						limit = {
+							game_start_date >= 8277.1.2
+							this = character:Dondarrion_2
+						}
+						add_trait = bloodline_beric
+					}
+				}
+			}
+
+			dynasty:dynn_Connington = {
+				every_dynasty_member = {
+					add_trait = connington
+				}
+			}
+
+			dynasty:dynn_Seaworth = {
+				every_dynasty_member = {
+					add_trait = seaworth
+				}
+			}
+
+			dynasty:dynn_Estermont = {
+				every_dynasty_member = {
+					add_trait = estermont_bloodline
+				}
+			}
+
+			dynasty:dynn_Penorse = {
+				every_dynasty_member = {
+					add_trait = penrose
+				}
+			}
+
+			dynasty:dynn_Morrigen = {
+				every_dynasty_member = {
+					add_trait = morrigen_bloodline
+					if = {
+						limit = {
+							game_start_date >= 8266.1.1
+							this = character:Morrigen_16
+						}
+						add_trait = gyles_morrigen_bloodline
+					}
+				}
+			}
+
+			dynasty:dynn_Selmy = {
+				every_dynasty_member = {
+					add_trait = selmy_bloodline
+					if = {
+						limit = {
+							game_start_date >= 8237.1.1
+							this = character:Selmy_3
+						}
+						add_trait = barristan_bold_bloodline
+					}
+				}
+			}
+
+			dynasty:dynn_Toyne = {
+				every_dynasty_member = {
+					add_trait = toyne_bloodline
+				}
+			}
+
+			dynasty:dynn_Errol = {
+				every_dynasty_member = {
+					add_trait = errol_bloodline
+				}
+			}
+
+			dynasty:dynn_Darklyn = {
+				every_dynasty_member = {
+					add_trait = the_shadow_king
+				}
+			}
+
+			house:house_Darke = {
+				every_house_member = {
+					add_trait = bloodline_jonquil_darke
+				}
+			}
+
+			dynasty:dynn_Farring = {
+				every_dynasty_member = {
+					add_trait = bloodline_farring
+					if = {
+						limit = {
+							game_start_date >= 8270.1.1
+							this = character:Farring_5
+						}
+						add_trait = bloodline_giantslayer_farring
+					}
+				}
+			}
+
+			dynasty:dynn_Hayford = {
+				every_dynasty_member = {
+					add_trait = bloodline_hayford
+				}
+			}
+
+			dynasty:dynn_Rosby = {
+				every_dynasty_member = {
+					add_trait = bloodline_rosby
+				}
+			}
+
+			dynasty:dynn_Rykker = {
+				every_dynasty_member = {
+					add_trait = bloodline_rykker
+				}
+			}
+
+			dynasty:dynn_Stokeworth = {
+				every_dynasty_member = {
+					add_trait = bloodline_stokeworth
+				}
+			}
+
+			dynasty:dynn_Ashford = {
+				every_dynasty_member = {
+					add_trait = bloodline_ashford
+				}
+			}
+
+			dynasty:dynn_Caswell = {
+				every_dynasty_member = {
+					add_trait = bloodline_caswell
+				}
+			}
+
+			dynasty:dynn_Blackbar= {
+				every_dynasty_member = {
+					add_trait = bloodline_blackbar
+				}
+			}
+
+			dynasty:dynn_Ambrose = {
+				every_dynasty_member = {
+					add_trait = bloodline_ambrose
+				}
+			}
+
+			dynasty:dynn_Massey = {
+				every_dynasty_member = {
+					add_trait = massey
+				}
+			}
+
+			dynasty:dynn_Bar_Emmon = {
+				every_dynasty_member = {
+					add_trait = bar_emmon
+				}
+			}
+
+
+			dynasty:dynn_Kenning = {
+				every_dynasty_member = {
+					add_trait = kenning_bloodline
+					add_trait = herrock_the_whoreson
+				}
+			}
+
+			dynasty:dynn_Stonehouse = {
+				every_dynasty_member = {
+					add_trait = stonehouse_bloodline
+				}
+			}
+
+			dynasty:dynn_Stonetree = {
+				every_dynasty_member = {
+					add_trait = stonetree_bloodline
+				}
+			}
+
+			dynasty:dynn_Sunderly = {
+				every_dynasty_member = {
+					add_trait = sunderly_bloodline
+				}
+			}
+
+			dynasty:dynn_Tawney = {
+				every_dynasty_member = {
+					add_trait = tawney_bloodline
+				}
+			}
+
+			dynasty:dynn_Wynch = {
+				every_dynasty_member = {
+					add_trait = wynch_bloodline
+				}
+			}
+
+			dynasty:dynn_Ironmaker = {
+				every_dynasty_member = {
+					add_trait = ironmaker_bloodline
+				}
+			}
+
+			dynasty:dynn_Brune = {
+				every_dynasty_member = {
+					add_trait = brune
+					add_trait = bloodline_appleater_brune
+				}
+			}
+
+			dynasty:dynn_Crabb = {
+				every_dynasty_member = {
+					add_trait = clarence_crabb
+				}
+			}
+
+			dynasty:dynn_Hardy = {
+				every_dynasty_member = {
+					add_trait = hardy
+					add_trait = crackbones_bl
+				}
+			}
+
+			dynasty:dynn_Blackwater = {
+				every_dynasty_member = {
+					add_trait = bronn
+				}
+			}
+
+			dynasty:dynn_Codd = {
+				every_dynasty_member = {
+					add_trait = house_codd
+				}
+			}
+
+			dynasty:dynn_Reyne = {
+				every_dynasty_member = {
+					add_trait = the_red_lion
+					if = {
+						limit = {
+							game_start_date >= 8042.1.1
+							or = {
+								this = character:Reyne_21
+								father = character:Reyne_21
+							}
+							nor = {
+								house = house_Vikary
+							}
+						}
+						add_trait = bloodline_robb_reyne
+					}
+					if = {
+						limit = {
+							game_start_date >= 8211.1.1
+							or = {
+								this = character:Reyne_45
+								father = character:Reyne_45
+							}
+							nor = {
+								house = house_Vikary
+							}
+						}
+						add_trait = bloodline_roger_reyne
+					}
+					if = {
+						limit = {
+							game_start_date >= 8217.1.1
+							or = {
+								this = character:Reyne_46
+								father = character:Reyne_46
+							}
+							nor = {
+								house = house_Vikary
+							}
+						}
+						add_trait = bloodline_ellyn_reyne
+					}
+				}
+
+				dynasty:dynn_Clegane = {
+					every_dynasty_member = {
+						add_trait = bloodline_clegane
+						if = {
+							limit = {
+								game_start_date >= 8265.1.1
+								or = {
+									this = character:Clegane_3
+									father = character:Clegane_3
+								}
+							}
+							add_trait = bloodline_the_mountain
+						}
+						if = {
+							limit = {
+								game_start_date >= 8271.1.1
+								or = {
+									this = character:Clegane_4
+									father = character:Clegane_4
+								}
+							}
+							add_trait = bloodline_hound
+						}
+					}
+				}
+
+				dynasty:dynn_Crakehall = {
+					every_dynasty_member = {
+						add_trait = crake_the_boarkiller
+						if = {
+							limit = {
+								game_start_date >= 7579.1.1
+								or = {
+									this = character:Crakehall_13
+									father = character:Clegane_13
+								}
+							}
+							add_trait = bloodline_the_mountain
+						}
+					}
+				}
+
+				dynasty:dynn_Yew = {
+					every_dynasty_member = {
+						add_trait = the_blind_bowman
+					}
+				}
+				dynasty:dynn_Westerling = {
+					every_dynasty_member = {
+						add_trait = the_crag
+					}
+				}
+				dynasty:dynn_Farman = {
+					every_dynasty_member = {
+						add_trait = farman
+					}
+				}
+				dynasty:dynn_Plumm = {
+					every_dynasty_member = {
+						add_trait = plumm
+					}
+				}
+				dynasty:dynn_Jast = {
+					every_dynasty_member = {
+						add_trait = jast
+					}
+				}
+				dynasty:dynn_Brax = {
+					every_dynasty_member = {
+						add_trait = brax
+					}
+				}
+				dynasty:dynn_Westford = {
+					every_dynasty_member = {
+						add_trait = westford_bloodline
+					}
+				}
+				dynasty:dynn_Hogg = {
+					every_dynasty_member = {
+						add_trait = jon_hogg
+					}
+				}
+				dynasty:dynn_Payne = {
+					every_dynasty_member = {
+						add_trait = bloodline_payne
+					}
+				}
+				dynasty:dynn_Tarbeck = {
+					every_dynasty_member = {
+						add_trait = bloodline_tarbeck
+					}
+				}
+				dynasty:dynn_Serrett = {
+					every_dynasty_member = {
+						add_trait = bloodline_serrett
+					}
+				}
+				dynasty:dynn_Kettleblack = {
+					every_dynasty_member = {
+						add_trait = bloodline_kettleblack
+					}
+				}
+				dynasty:dynn_Marbrand = {
+					every_dynasty_member = {
+						add_trait = bloodline_marbrand
+					}
+				}
+				dynasty:dynn_Banefort = {
+					every_dynasty_member = {
+						add_trait = the_hooded_man
+					}
+				}
+				dynasty:dynn_Foote = {
+					every_dynasty_member = {
+						add_trait = foote
+					}
+				}
+				dynasty:dynn_Slynt = {
+					every_dynasty_member = {
+						add_trait = bloodline_janos_slynt
+					}
+				}
+				dynasty:dynn_Lydden = {
+					every_dynasty_member = {
+						add_trait = bloodline_joff_lydden
+					}
+				}
+
+				dynasty:dynn_Arryn = {
+					every_dynasty_member = {
+						add_trait = artos_arryn
+						add_trait = the_talon
+					}
+				}
+
+				dynasty:dynn_Tully = {
+					every_dynasty_member = {
+						add_trait = edmyn_tully
+						add_trait = axel_tully
+						if = {
+							limit = {
+								game_start_date >= 8112.1.1
+							}
+							add_trait = kermit_tully
+						}
+						if = {
+							limit = {
+								game_start_date >= 8243.1.1
+								this = character:Tully_9
+							}
+							add_trait = blackfish
+						}
+						if = {
+							limit = {
+								game_start_date >= 8243.1.1
+								or = { 
+								this = character:Tully_4
+								this = character:Tully_5
+
+								}
+							}
+							add_trait = catelyn
+						}
+						if = {
+							limit = {
+								game_start_date >= 8243.1.1
+								this = character:Tully_6
+							}
+							add_trait = lysa
+						}
+					}
+				}
+
+				dynasty:dynn_Frey = {
+					every_dynasty_member = {
+						add_trait = frey_bloodline
+						if = {
+							limit = {
+								game_start_date >= 8208.10.1
+							}
+							add_trait = walder_frey
+							add_trait = walder_frey_prw
+						}
+					}
+				}
+
+				dynasty:dynn_Mallister = {
+					every_dynasty_member = {
+						add_trait = mallister
+					}
+				}
+
+				dynasty:dynn_Blackwood = {
+					every_dynasty_member = {
+						add_trait = blackwood_bl
+						add_trait = raventree
+						if = {
+							limit = {
+								game_start_date >= 8113.1.1
+								or = {
+									this = character:Blackwood_63
+									mother = character:Blackwood_63
+								}
+							}
+							add_trait = black_aly
+						}
+						if = {
+							limit = {
+								game_start_date >= 8113.1.1
+								or = {
+									this = character:Blackwood_74
+									mother = character:Blackwood_74
+								}
+							}
+							add_trait = bloody_ben_blackwood
+						}
+					}
+				}
+
+				dynasty:dynn_Bracken = {
+					every_dynasty_member = {
+						add_trait = bracken_bl
+						add_trait = brute_bracken
+					}
+				}
+
+				dynasty:dynn_Darry = {
+					every_dynasty_member = {
+						add_trait = darry
+						if = {
+							limit = {
+								game_start_date >= 8238.1.1
+								this = character:Darry_2
+							}
+							add_trait = jonothor_darry_bloodline
+						}
+					}
+				}
+
+				dynasty:dynn_Mooton = {
+					every_dynasty_member = {
+						add_trait = mooton
+						add_trait = florian_bloodline
+					}
+				}
+
+				dynasty:dynn_Vance = {
+					every_dynasty_member = {
+						add_trait = vance
+					}
+				}
+
+				dynasty:dynn_vypren = {
+					every_dynasty_member = {
+						add_trait = vorian_vypren
+					}
+				}
+
+				dynasty:dynn_Nutt = {
+					every_dynasty_member = {
+						add_trait = bloodline_nutt
+					}
+				}
+
+				dynasty:dynn_Harroway = {
+					every_dynasty_member = {
+						add_trait = harroway_bl
+					}
+				}
+
+				dynasty:dynn_Towers = {
+					every_dynasty_member = {
+						add_trait = towers_bl
+					}
+				}
+
+				dynasty:dynn_Qoherys = {
+					every_dynasty_member = {
+						add_trait = qoherys_bl
+					}
+				}
+
+				dynasty:dynn_Lothston = {
+					every_dynasty_member = {
+						add_trait = lothston
+						if = {
+							limit = {
+								game_start_date >= 8184.1.1
+								or = {
+								this = character:Lothston_17
+								mother = character:Lothston_17	
+								}
+							}
+							add_trait = danelle_lothston
+						}
+					}
+				}
+
+				dynasty:dynn_Whent = {
+					every_dynasty_member = {
+						add_trait = whent
+						if = {
+							limit = {
+								game_start_date >= 8240.1.1
+								this = character:Whent_5
+							}
+							add_trait = oswell_whent_bloodline
+						}
+					}
+				}
+
+				dynasty:dynn_Justman = {
+					every_dynasty_member = {
+						add_trait = justman
+					}
+				}
+
+				dynasty:dynn_Teague = {
+					every_dynasty_member = {
+						add_trait = teague
+					}
+				}
+
+				dynasty:dynn_Fisher = {
+					every_dynasty_member = {
+						add_trait = fisher
+					}
+				}
+				dynasty:dynn_Piper = {
+					every_dynasty_member = {
+						add_trait = piper
+					}
+				}
+				dynasty:dynn_Mudd = {
+					every_dynasty_member = {
+						add_trait = mudd
+						add_trait = hammer_of_justice
+					}
+				}
+				dynasty:dynn_Goodbrother= {
+					every_dynasty_member = {
+						add_trait = goodbrother
+					}
+				}
+
+				dynasty:dynn_Mandrake= {
+					every_dynasty_member = {
+						add_trait = bloodline_mandrake
+					}
+				}
+
+				dynasty:dynn_Strickland= {
+					every_dynasty_member = {
+						add_trait = bloodline_strickland
+					}
+				}
+
+				dynasty:dynn_Strong = {
+					every_dynasty_member = {
+						add_trait = h_strong
+						if = { 
+							limit = {
+								game_start_date >= 8089.1.1
+								or = {
+									this = character:Strong_31
+									father = character:Strong_31
+								}
+							}
+							add_trait = clubfoot
+						}
+						if = { 
+							limit = {
+								game_start_date >= 8089.1.1
+								or = {
+									this = character:Strong_34
+									mother = character:Strong_34
+								}
+							}
+							add_trait = alys_rivers
+						}
+					}
+				}
+
+				house:house_ArrynGT= {
+					every_house_member = {
+						add_trait = gulltown_arryns
+					}
+				}
+
+				dynasty:dynn_Grafton= {
+					every_dynasty_member = {
+						add_trait = gerold_grafton
+					}
+				}
+
+				dynasty:dynn_Royce= {
+					every_dynasty_member = {
+						add_trait = robar_royce
+					}
+				}
+
+				dynasty:dynn_Redfort= {
+					every_dynasty_member = {
+						add_trait = redfort
+					}
+				}
+
+				dynasty:dynn_Baelish= {
+					every_dynasty_member = {
+						if = {
+							limit = {
+								game_start_date >= 8268.6.1
+								or = {
+									this = character:Baelish_2
+									father = character:Baelish_2
+								}
+							}
+							add_trait = littlefinger
+						}
+					}
+				}
+
+				dynasty:dynn_Corbray= {
+					every_dynasty_member = {
+						add_trait = jaime_corbray
+					}
+				}
+
+				dynasty:dynn_Waynwood= {
+					every_dynasty_member = {
+						add_trait = hammer_of_the_hills
+					}
+				}
+
+				dynasty:dynn_Shett= {
+					every_dynasty_member = {
+						add_trait = shett_bl
+					}
+				}
+				dynasty:dynn_Hunter= {
+					every_dynasty_member = {
+						add_trait = hunter_a
+					}
+				}
+				dynasty:dynn_Upcliff= {
+					every_dynasty_member = {
+						add_trait = ursula_upcliff
+					}
+				}
+				dynasty:dynn_Ruthermont= {
+					every_dynasty_member = {
+						add_trait = ruthermont
+					}
+				}
+				dynasty:dynn_Tollet= {
+					every_dynasty_member = {
+						add_trait = torgold_the_grim
+					}
+				}
+				dynasty:dynn_Templeton= {
+					every_dynasty_member = {
+						add_trait = luceon_templeton
+					}
+				}
+				dynasty:dynn_Manderly= {
+					every_dynasty_member = {
+						add_trait = manderly
+					}
+				}
+				dynasty:dynn_Umber= {
+					every_dynasty_member = {
+						add_trait = last_hearth
+					}
+				}
+				dynasty:dynn_Dustin= {
+					every_dynasty_member = {
+						add_trait = first_king
+						if = {
+							limit = {
+								game_start_date >= 8078.1.1
+								or = {
+									this = character:Dustin_28
+									father = character:Dustin_28
+								}
+							}
+							add_trait = roddy_ruin
+						}
+					}
+				}
+				dynasty:dynn_Ryswell= {
+					every_dynasty_member = {
+						add_trait = ryder
+					}
+				}
+				dynasty:dynn_Reed= {
+					every_dynasty_member = {
+						add_trait = the_marsh_king
+					}
+				}
+				dynasty:dynn_Mormont= {
+					every_dynasty_member = {
+						add_trait = bear_island
+					}
+				}
+				dynasty:dynn_Hornwood= {
+					every_dynasty_member = {
+						add_trait = hornwood
+					}
+				}
+				dynasty:dynn_Glover= {
+					every_dynasty_member = {
+						add_trait = glover
+					}
+				}
+				dynasty:dynn_Flint= {
+					every_dynasty_member = {
+						add_trait = flint
+					}
+				}
+				dynasty:dynn_Locke= {
+					every_dynasty_member = {
+						add_trait = bloodline_locke
+					}
+				}
+				dynasty:dynn_Slate= {
+					every_dynasty_member = {
+						add_trait = bloodline_slate
+					}
+				}
+				dynasty:dynn_Sarwyck= {
+					every_dynasty_member = {
+						add_trait = bloodline_alester_sarwyck
+					}
+				}
+				dynasty:dynn_Butterwell= {
+					every_dynasty_member = {
+						add_trait = bloodline_butterwell
+					}
+				}
+				dynasty:dynn_Smallwood= {
+					every_dynasty_member = {
+						add_trait = bloodline_smallwood
+					}
+				}
+				dynasty:dynn_Egen= {
+					every_dynasty_member = {
+						add_trait = egen_bloodline
+					}
+				}
+				dynasty:dynn_Belmore= {
+					every_dynasty_member = {
+						add_trait = belmore_bloodline
+					}
+				}
+			}
+		}
+	
+
+		#Aegon Conquer's Westeros
+		if = {
+			limit = {
+				game_start_date >= 7999.4.1
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        NOR = {
+                            this = character:Targaryen_28
+                            this = character:Targaryen_29
+                        }
+                    }
+                    add_trait = the_conqueror
+                }
+            }
+            dynasty:dynn_Targaryen = {
+                every_dynasty_member = {
+                    limit = {
+                        OR = {
+                        mother = character:Velaryon_24
+                        mother = character:Targaryen_32
+                        mother = character:Targaryen_36
+                        mother = character:Baratheon_33
+                        mother = character:Targaryen_47
+                        mother = character:Targaryen_48
+                        mother = character:Targaryen_50
+                        mother = character:Targaryen_51
+                        mother = character:Targaryen_52
+                        mother = character:Targaryen_55
+                        mother = character:Targaryen_59
+                        mother = character:Arryn_80
+                        mother = character:Velaryon_34
+                        mother = character:Targaryen_63
+						
+						this = character:Arryn_80
+						this = character:Velaryon_34
+						#TODO: cONTINUE THE LINEAGE
+						}
+                    }
+					add_trait = alyssa_velaryon 
+			}
+		}
+
+		#Maegor becomes king and Aegon the Uncrowned
+		if = {
+			limit = {
+				game_start_date >= 8042.3.1
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_31
+                    }
+					add_trait = the_cruel
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_33
+                    }
+					add_trait = the_uncrowned
+				}
+			}
+
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        mother = character:Targaryen_32
+                    }
+					add_trait = queen_rhaena
+				}
+			}
+			character:Targaryen_33 = {
+				add_trait = the_uncrowned
+			}
+			character:Targaryen_32 = {
+				add_trait = queen_rhaena
+			}
+		
+
+		#Jaehaerys becomes king
+		if = {
+			limit = {
+				game_start_date >= 8048.3.7
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        NOR = {
+							this = character:Targaryen_41
+							this = character:Targaryen_42
+							this = character:Targaryen_36
+						}
+                    }
+					add_trait = the_conciliator
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_45
+                    }
+					add_trait = aemon_caraxes
+				}
+			}
+			character:Targaryen_45 = {
+				add_trait = aemon_caraxes
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_61
+                    }
+					add_trait = rogue_prince
+				}
+			}
+			character:Targaryen_61 = {
+				add_trait = rogue_prince
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+                        mother = character:Targaryen_63
+						this = character:Targaryen_63
+						mother = character:Arryn_80
+						this = character:Arryn_80
+						}
+                    }
+					add_trait = aemma_arryn
+				}
+			}
+			dynasty:dynn_Velaryon = {
+				every_dynasty_member = {
+					limit = {
+						or = {
+                        father = title:d_driftmark.holder
+						this = character:Velaryon_31
+						this = title:d_driftmark.holder
+
+						}
+                    }
+					add_trait = sea_snake
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						game_start_date >= 8088.1.1
+						mother = character:Hightower_97
+					}
+					add_trait = alicent_hightower
+			}
+		}
+	}
+
+
+		#Dance of Dragons
+		if = {
+			limit = {
+				game_start_date >= 8129.3.3
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        mother = character:Targaryen_63
+                    }
+					add_trait = rhaenyra
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_65
+                    }
+					add_trait = aegon_green
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        father = character:Targaryen_67
+                    }
+					add_trait = aemond
+				}
+			}
+			character:Targaryen_63 = {
+				add_trait = rhaenyra
+			}
+			character:Targaryen_65 = {
+				add_trait = aegon_green
+			}
+			character:Targaryen_67 = {
+				add_trait = aemond
+			}
+			character:Targaryen_69 = {
+				add_trait = baela
+			}
+			character:Targaryen_70 = {
+				add_trait = rhaena_of_pentos
+			}
+			character:Hammer_1 = {
+				add_trait = hugh_hammer
+			}
+			character:White_1 = {
+				add_trait = ulf_white
+			}
+			character:Farseed_1 = {
+				add_trait = nettles
+			}
+
+			every_dynasty_member = {
+					limit = {
+                        mother = character:Targaryen_69
+                    }
+					add_trait = baela
+				}
+
+			every_dynasty_member = {
+					limit = {
+                        mother = character:Targaryen_70
+                    }
+					add_trait = rhaena_of_pentos
+				}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        mother = character:Targaryen_63
+						father = character:Velaryon_35
+                    }
+					add_trait = bloodline_strong_boys
+				}
+			}
+			dynasty:dynn_Velaryon = {
+				every_dynasty_member = {
+					limit = {
+						or = {
+                        father = character:Velaryon_43
+						this = character:Velaryon_43
+
+						}
+                    }
+					add_trait = addam_velaryon
+				}
+			}	
+			dynasty:dynn_Stark = {
+				every_dynasty_member = {
+					limit = {
+						or = {
+                        father = character:Stark_86
+						this = character:Stark_86
+
+						}
+                    }
+					add_trait = cregan_stark
+				}
+			}
+		}
+
+			#End of Dance of Dragons 
+			if = {
+			limit = {
+				game_start_date >= 8131.1.14
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        NOR = {
+							this = character:Targaryen_71
+							this = character:Targaryen_70
+							this = character:Targaryen_69
+						}
+                    }
+					add_trait = rhaenyra
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+                        NOR = {
+							this = character:Targaryen_71
+						}
+                    }
+					add_trait = rogue_prince
+				}
+			}
+			
+			dynasty:dynn_Velaryon = {
+				every_dynasty_member = {
+					limit = {
+						or = {
+                        father = title:d_driftmark.holder
+						this = character:Velaryon_44
+						this = title:d_driftmark.holder
+
+						}
+                    }
+					add_trait = oakenfist
+				}
+			}	
+		}
+
+		if = {
+			limit = {
+				game_start_date >= 8157.1.13
+			}
+			character:Targaryen_81 = {
+				add_trait = young_dragon
+			}
+			character:Targaryen_82 = {
+				add_trait = the_blessed
+			}
+			character:Targaryen_89 = {
+				add_trait = dragonknight
+			}
+			character:Targaryen_92 = {
+				add_trait = daenerys_dorne
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+							father = character:Targaryen_79
+							father = character:Targaryen_88
+							father = character:Targaryen_91
+							father = character:Targaryen_107
+							father = character:Targaryen_108
+							father = character:Targaryen_110
+							father = character:Targaryen_122
+							father = character:Targaryen_127
+							this = character:Targaryen_79
+							this = character:Targaryen_88
+							this = character:Targaryen_91
+                            this = character:Targaryen_107
+                            this = character:Targaryen_108
+                            this = character:Targaryen_110
+                            this = character:Targaryen_122
+                            this = character:Targaryen_127
+							this = character:Targaryen_1
+							father = character:Targaryen_1
+						}
+
+                       NOR ={
+						this = character:Targaryen_81
+						this = character:Targaryen_82
+						this = character:Targaryen_83
+						this = character:Targaryen_84
+						this = character:Targaryen_85
+                    }
+					}
+					add_trait = viserys_ii
+				}
+			}
+			}
+				every_dynasty_member = {
+					limit = {
+						OR = { 
+							mother = character:Targaryen_83
+							this = character:Targaryen_83
+						}
+                      
+                    }
+					add_trait = daena
+				}
+			
+			every_noble_family = {
+					limit = {
+                        OR = { 
+							mother = character:Targaryen_84
+							this = character:Targaryen_84
+						}
+                    }
+					add_trait = rhaena
+				}
+			every_noble_family = {
+					limit = {
+                        OR = { 
+							mother = character:Targaryen_85
+							this = character:Targaryen_85
+						}
+                    }
+					add_trait = elaena
+				}
+	
+		}
+
+
+		Blackfyre Rebellions
+		if = {
+			limit = {
+				game_start_date >= 8172.3.28
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_107
+						father = character:Targaryen_107
+						}
+                    }
+					add_trait = breakspear
+				}
+			}
+			
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						father = title:e_blackfyre_rebellion.holder 
+                    }
+					add_trait = daemon_blackfyre
+				}
+			}
+
+			house:house_Blackfyre = {
+				every_house_member = { 
+					add_trait = daemon_blackfyre
+					if = {
+						limit = {
+							game_start_date >= 8252.11.11
+						}
+						add_trait = maelys
+					}
+				}
+			}
+
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_95
+						father = character:Targaryen_95
+						}
+                    }
+					add_trait = bittersteel
+				}
+			}
+
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_96
+						father = character:Targaryen_96
+						}
+                    }
+					add_trait = bloodraven
+				}
+			}
+
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_97
+						father = character:Targaryen_97
+						}
+                    }
+					add_trait = seastar
+				}
+			}
+
+			title:d_laamp_merc_golden_company = {
+				holder = {
+					add_trait = golden_company
+				}
+			}
+
+			
+		}
+
+		if = {
+			limit = {
+				game_start_date >= 8259.6.1
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					add_trait = viserys_ii
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_1
+						father = character:Targaryen_1
+						father = character:Targaryen_3
+						}
+                    }
+					add_trait = mad_king
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_3
+						father = character:Targaryen_3
+						}
+                    }
+					add_trait = rhaegar
+				}
+			}
+		}
+		if = {
+			limit = {
+				game_start_date >= 8283.9.1
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_8
+						father = character:Targaryen_8
+						}
+                    }
+					add_trait = viserys_iii
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_9
+						father = character:Targaryen_9
+						}
+                    }
+					add_trait = mother_of_dragons
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					title:e_the_iron_throne.holder = character:Targaryen_11
+					title:e_the_iron_throne.holder = character:Targaryen_12
+					
+				}
+				AND = {
+						character:Targaryen_12 = {
+						dynasty = dynn_Targaryen
+						}
+					}
+				}
+			}
+			dynasty:dynn_Targaryen = {
+				every_dynasty_member = {
+					limit = {
+						OR = {
+						this = character:Targaryen_11
+						father = character:Targaryen_11
+						}
+                    }
+					add_trait = aegon_vi
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					title:e_the_iron_throne.holder = character:Targaryen_11
+					title:e_the_iron_throne.holder = character:Targaryen_12
+				}
+				game_start_date >= 8283.9.1
+			}
+			character:Targaryen_11 = {
+				add_trait = aegon_the_reclaimer
+			}
+			character:Targaryen_12 = {
+				add_trait = aegon_the_reclaimer
+			}
+		}
+	}
+}

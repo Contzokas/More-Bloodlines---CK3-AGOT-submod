@@ -3,7 +3,6 @@
 		all_descendants_actions
 		ck2_version_actions
 		ck2_realfather_version_actions
-		dynasty_bloodline_actions
 	}
 }
 
@@ -137,25 +136,6 @@ ck2_realfather_version_actions ={
 	}
 }
 
-
-dynasty_bloodline_actions={
-	trigger = { 
-		any_parent ={
-			dynasty?= ROOT.dynasty
-			any_character_trait = { has_trait_flag = dynasty_bloodline }
-		}
-	}
-
-	effect = {  
-		every_parent ={
-			limit = { dynasty?= ROOT.dynasty }
-			every_character_trait ={
-				limit = { has_trait_flag = dynasty_bloodline }
-				ROOT = { add_trait = prev }
-			}
-		}
-	}
-}
 
 
 

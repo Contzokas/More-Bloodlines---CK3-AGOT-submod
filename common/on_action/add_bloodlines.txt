@@ -1856,6 +1856,10 @@ add_bloodlines = {
                         }
                     }
                     add_trait = the_conqueror
+					add_pressed_claim = title:e_the_iron_throne
+					add_pressed_claim = title:k_dragonstone
+					add_pressed_claim = title:d_dragonstone
+					add_pressed_claim = title:c_dragonstone
                 }
             }
             dynasty:dynn_Targaryen = {

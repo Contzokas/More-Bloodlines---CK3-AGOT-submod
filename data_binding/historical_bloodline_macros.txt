@@ -15,3 +15,8 @@ macro = {
 	definition = "RUI_Ch_HIBL_macro_01"
 	replace_with = "TraitIsBloodline"
 }
+macro = {
+	description = "should not be shown as trait"
+	definition = "RUI_Ch_hidden_trait"
+	replace_with = "RUI_Ch_HIBL_macro_01"
+}

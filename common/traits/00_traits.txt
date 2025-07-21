@@ -16741,7 +16741,7 @@ education_republican_knowledge_4 = {
 ############### EP2 TRAITS ##############
 
 tourney_participant = {
-
+	category = fame
 	#AGOT Disabled
 	#same_opinion = 10
 	belligerent_opinion = 10
@@ -17101,6 +17101,7 @@ tourney_participant = {
 
 lifestyle_traveler = {
 	icon = "traveler.dds"
+	category = fame
 
 	monthly_wanderer_lifestyle_xp_gain_mult = 0.1
 	#AGOT Disabled

@@ -17,8 +17,8 @@ trait_the_cruel_desc:0 "Descendant of Maegor the Cruel, whose reign was marked b
 the_conciliator:0 "Blood of the Conciliator"
 trait_the_conciliator_desc:0 "Descendant of Jaehaerys the Conciliator, the wise and just king who brought peace and prosperity to Westeros."
 
-aemon_caraxes:0 "Blood of Aemon Caraxes"
-trait_aemon_caraxes_desc:0 "Descendant of Prince Aemon Targaryen, the Dragonknight, renowned for his valor and skill in battle."
+aemon_caraxes:0 "Blood of Prince Aemon son of Jaeherys "
+trait_aemon_caraxes_desc:0 "Descendant of Prince Aemon Targaryen son of Jaeherys I and father of princess Rhaenys "The Queen Who Never Was" renowned for his valor and skill in battle."
 
 rogue_prince:0 "Blood of the Rogue Prince"
 trait_rogue_prince_desc:0 "Descendant of Prince Daemon Targaryen, the infamous Rogue Prince, known for his ambition and martial prowess."
@@ -886,3 +886,13 @@ trait_florian_bloodline_desc:0 "Descendant of Florian the Fool, a legendary hero
 weeper_bloodline:0 "Blood of the Weeper"
 trait_weeper_bloodline_desc:0 "Descendant of the Weeper, a ruthless and brutal Free Folk chieftain, infamous for his cruelty and the tears that perpetually streamed from his eyes."
 
+bloodline_tourney_winner:0 "Blood of the Tourney Champion"
+trait_bloodline_tourney_winner_desc:0 "Descendant of a renowned tourney champion, known for their prowess in the lists and skill at arms."
+bloodline_tourney_winner_5:0 "Blood of the Tourney Champion"
+trait_bloodline_tourney_winner_5_desc:0 "Descendant of a celebrated tourney champion who claimed victory in multiple tournaments, earning fame and glory through martial prowess."
+bloodline_tourney_winner_10:0 "Blood of the Tourney Champion"
+trait_bloodline_tourney_winner_10_desc:0 "Descendant of a masterful tourney champion whose victories in the lists became the stuff of songs and stories."
+bloodline_tourney_winner_15:0 "Blood of the Tourney Champion"
+trait_bloodline_tourney_winner_15_desc:0 "Descendant of a legendary tourney champion whose skill in combat and chivalric virtues made them a paragon of knighthood."
+bloodline_tourney_winner_20:0 "Blood of the Tourney Champion"
+trait_bloodline_tourney_winner_20_desc:0 "Descendant of the greatest tourney champion of their age, whose unmatched prowess in the lists became legendary throughout the realm."

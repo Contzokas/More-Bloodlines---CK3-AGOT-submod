@@ -4035,6 +4035,151 @@ great_conqueror_male = {
     }
 }
 
+bloodline_tourney_winner = {
+    name = bloodline_tourney_winner
+    shown_in_ruler_designer = no
+    monthly_prestige = 0.1
+    squire_opinion = 10
+    knight_opinion = 10
+    prowess = 1
+
+    icon = { desc = GFX_bloodline_tourney_winner.dds }
+
+    flag = male_character_bloodline
+    flag = bloodline_trait
+    flag = hidden_trait
+    flag = no_message
+
+
+    desc = { #The description is not shown. it is used to hide/show appropriately
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = bloodline_desc_list
+            }
+            desc = bloodline_desc_no
+        }
+    }
+}
+
+bloodline_tourney_winner_5 = {
+    name = bloodline_tourney_winner
+    shown_in_ruler_designer = no
+    monthly_prestige = 0.25
+    squire_opinion = 10
+    knight_opinion = 10
+    prowess = 1
+
+    icon = { desc = GFX_bloodline_tourney_winner.dds }
+
+    flag = male_character_bloodline
+    flag = bloodline_trait
+    flag = hidden_trait
+    flag = no_message
+
+
+    desc = { #The description is not shown. it is used to hide/show appropriately
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = bloodline_desc_list
+            }
+            desc = bloodline_desc_no
+        }
+    }
+}
+
+bloodline_tourney_winner_10 = {
+    name = bloodline_tourney_winner
+    shown_in_ruler_designer = no
+    monthly_prestige = 0.25
+    squire_opinion = 10
+    knight_opinion = 10
+    prowess = 2
+
+    icon = { desc = GFX_bloodline_tourney_winner.dds }
+
+    flag = male_character_bloodline
+    flag = bloodline_trait
+    flag = hidden_trait
+    flag = no_message
+
+
+    desc = { #The description is not shown. it is used to hide/show appropriately
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = bloodline_desc_list
+            }
+            desc = bloodline_desc_no
+        }
+    }
+}
+
+bloodline_tourney_winner_15 = {
+    name = bloodline_tourney_winner
+    shown_in_ruler_designer = no
+    monthly_prestige = 0.5
+    squire_opinion = 10
+    knight_opinion = 10
+    prowess = 3
+
+    icon = { desc = GFX_bloodline_tourney_winner.dds }
+
+    flag = male_character_bloodline
+    flag = bloodline_trait
+    flag = hidden_trait
+    flag = no_message
+
+
+    desc = { #The description is not shown. it is used to hide/show appropriately
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = bloodline_desc_list
+            }
+            desc = bloodline_desc_no
+        }
+    }
+}
+
+bloodline_tourney_winner_20 = {
+    name = bloodline_tourney_winner
+    shown_in_ruler_designer = no
+    monthly_prestige = 0.5
+    squire_opinion = 10
+    knight_opinion = 10
+    prowess = 5
+
+    icon = { desc = GFX_bloodline_tourney_winner.dds }
+
+    flag = male_character_bloodline
+    flag = bloodline_trait
+    flag = hidden_trait
+    flag = no_message
+
+
+    desc = { #The description is not shown. it is used to hide/show appropriately
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = bloodline_desc_list
+            }
+            desc = bloodline_desc_no
+        }
+    }
+}
+
 great_conqueror_female = {
     name = great_conqueror_female
     shown_in_ruler_designer = no

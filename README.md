@@ -1,6 +1,10 @@
 # More Bloodlines - CK3 AGOT submod
 
-[![More Bloodlines Thumbnail](thumbnail.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=3525365211)
+<div align="center">
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3525365211">
+    <img src="thumbnail.png" alt="More Bloodlines Thumbnail">
+  </a>
+</div>
 
 A comprehensive submod for **A Game of Thrones (AGOT)** mod for **Crusader Kings III** that adds hundreds of new historical bloodlines to enhance your gameplay experience.
 
